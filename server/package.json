@@ -1,10 +1,11 @@
 {
-  "name": "demo-code",
+  "name": "server",
   "version": "1.0.0",
   "description": "Beckend",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [
     "Django",
