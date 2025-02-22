@@ -4,21 +4,8 @@
   "description": "Beckend",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon index.js"
   },
-  "keywords": [
-    "Django",
-    "Beckend"
-  ],
-  "author": "Raxmonov Abuzar",
-  "license": "ISC",
-  "dependencies": {
-    "@supabase/supabase-js": "^2.48.1",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "express-validator": "^7.2.1",
-    "jsonwebtoken": "^9.0.2",
-    "nodemon": "^3.1.9"
-  }
+  "author": "",
+  "license": "ISC"
 }

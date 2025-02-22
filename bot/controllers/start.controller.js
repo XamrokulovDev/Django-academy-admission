@@ -1,9 +1,11 @@
-exports.startController = (bot, msg) => {
-  const chatId = msg.chat.id;
-  const text = `Assalomu alaykum, <b>${msg.from.first_name}</b>! Botimizga xush kelibsiz! Botdan foydalanishni boshlash uchun iltimos, ismingizni kiriting.`;
+const { saveStudent } = require("../models/student.model");
 
-//   start comand 
-  bot.sendMessage(chatId, text, {
-    parse_mode: "HTML",
-  });
-};
+async function startController(bot, msg) {
+    const chatId = msg.chat.id;
+
+    const result = await saveStudent(chatId);
+
+    bot.sendMessage(chatId, result.message);
+}
+
+module.exports = { startController };
