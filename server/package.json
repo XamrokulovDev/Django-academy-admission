@@ -1,11 +1,23 @@
 {
-  "name": "server",
+  "name": "demo-code",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Beckend",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "Django",
+    "Beckend"
+  ],
+  "author": "Raxmonov Abuzar",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9"
+  }
 }
