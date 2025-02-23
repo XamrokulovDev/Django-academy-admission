@@ -11,8 +11,15 @@ app.use(cors({
     allowedHeaders: '*'
 }))
 
+// Mongodb connection
+const connectMongo = require('./config/db')
+connectMongo()
+
 app.use('/api',
-    require('./routers/register.router')
+    require('./routers/register.router'),
+    require('./routers/lessons.router'),
+    require('./routers/group.router'),
+    require('./routers/user.router')
 )
 
 // Handle error

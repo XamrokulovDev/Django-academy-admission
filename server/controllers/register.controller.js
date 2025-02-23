@@ -1,4 +1,3 @@
-const supabase = require('../config/supabase')
 const asyncHandle = require('../middlewares/async')
 const ErrorResponse = require('../utils/errorResponse')
 const jwt = require('jsonwebtoken')
